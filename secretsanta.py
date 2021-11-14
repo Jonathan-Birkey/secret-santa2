@@ -2,11 +2,17 @@ import click
 
 
 @click.group()
-def secretsanta() -> None:
+def secretsanta():
     """
     Nothing to see here.
     """
     pass
+
+
+def build_random_list():
+    """
+    Nothing to see here.
+    """
 
 
 @click.command(name='init')

@@ -4,12 +4,10 @@ from secretsanta import secretsanta
 
 
 class MyTestCase(unittest.TestCase):
-    def test_something(self):
+    def test_secretsanta(self):
         runner = CliRunner()
         result = runner.invoke(secretsanta)
         self.assertTrue(result.exit_code == 0)
-        print(result.output)
-        self.assertTrue(result.output == "Hello")
 
 
 if __name__ == '__main__':
