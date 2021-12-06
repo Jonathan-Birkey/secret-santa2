@@ -1,12 +1,12 @@
-main: CI
+name: secretsanta CLI CI/CD
 
 on:
   push:
     branches:
-      - main
-    pull_requests:
-      branches:
-        -main
+    - main
+  pull_request:
+    branches:
+    - main
 
 jobs:
   build:
